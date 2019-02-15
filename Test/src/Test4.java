@@ -1,6 +1,8 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
-
-// 프로그래머스   
+// 프로그래머스   나누어 떨어지는 숫자 배열
 public class Test4 {
 
 	public static void main(String[] args) {
@@ -21,8 +23,20 @@ public class Test4 {
 	        	  n++;
 	          }
 	      }
-	      System.out.println(answer[0]);
-	      System.out.println(answer[1]);
-	      return answer;
+	      
+	      int[] answer2 = new int[n];
+	      
+	      for(int i=0;i<answer.length;i++){
+	    	  int n2 = 0;
+	    	  if(answer[i]!=0){
+	    		  answer2[n2]=answer[i];
+	    		n2++;
+	    	  }
+	      }
+	      if(answer2.length==0){
+	    	  answer2[0] = -1;
+	      }
+	     System.out.println(Arrays.toString(answer2));
+	      return answer2;
 	  }
 }
