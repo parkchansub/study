@@ -1,4 +1,4 @@
-package level1;
+package programmers.level1;
 
 // 프로그래머스()
 public class Test2 {

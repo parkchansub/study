@@ -1,4 +1,4 @@
-package level2;
+package programmers.level2;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -27,6 +27,7 @@ public class Test1 {
 		System.out.println("aaaaaa");
 		
 		for(int i=0;i<skill_trees.length;i++){
+			
 			for(int j=0;j<skill_trees[i].length();j++){
 				if(map.containsKey(skill_trees[i].substring(j, j+1))){
 					if(value < map.get(skill_trees[i].substring(j, j+1))){
@@ -34,11 +35,12 @@ public class Test1 {
 						System.out.println(skill_trees[i].substring(j, j+1));
 						value = map.get(skill_trees[i].substring(j, j+1));
 					}
-					else{
+					/*else{
 						skill_trees[i] = "false";
-					}
+					}*/
 				}
 			}
+			
 		}
 		System.out.println("CCCCC");
 		
