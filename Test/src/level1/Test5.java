@@ -1,3 +1,4 @@
+package level1;
 // 프로그래머스   수박수박수박수박수박수?
 public class Test5 {
 
