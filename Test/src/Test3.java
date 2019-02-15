@@ -13,17 +13,34 @@ public class Test3 {
     	String[] bsd = new String[] {"josipa", "filipa", "marina", "nikola"};
     	
     	Test3 test1 = new Test3();
-    	Test3 test2 = new Test3();
-    	Test3 test3 = new Test3();
     	
-    	/*String d= test1.solution2(a, b);
-    	System.out.println(d);*/
-    	String d1 = test2.solution2(as, bs);
+    	String d1 = test1.solution2(as, bs);
     	System.out.println(d1);
-    	/*String d2 = test3.solution2(asd, bsd);
-    	System.out.println(d2);*/
     }
-    	public String solution2(String[] participant, String[] completion) {
+    
+    // 첫번쨰 풀이
+    public String solution(String[] participant, String[] completion) {
+        String answer = "";
+        for(int i=0;i<completion.length;i++){
+            for(int j=0;j<participant.length;j++){
+                if(completion[i].equals(participant[j])){
+                    participant[j] = "flase";
+                    break;
+                }
+            }
+        }
+        
+        for(int k=0;participant.length>k;k++){
+            if(participant[k]!="flase"){
+            	answer = participant[k];
+            }
+        }
+        
+        return answer;
+    }
+    
+    // 두번쨰 풀이    	
+    public String solution2(String[] participant, String[] completion) {
     		String answer = "";
     		
     		Map map = new HashMap();
@@ -56,27 +73,6 @@ public class Test3 {
         	}
     		return answer;
     	}
-    
-    
-        public String solution(String[] participant, String[] completion) {
-            String answer = "";
-            for(int i=0;i<completion.length;i++){
-                for(int j=0;j<participant.length;j++){
-                    if(completion[i].equals(participant[j])){
-                        participant[j] = "flase";
-                        break;
-                    }
-                }
-            }
-            
-            for(int k=0;participant.length>k;k++){
-                if(participant[k]!="flase"){
-                	answer = participant[k];
-                }
-            }
-            
-            return answer;
-        }
-}
+	}
 
 

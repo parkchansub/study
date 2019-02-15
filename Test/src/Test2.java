@@ -1,5 +1,5 @@
-import java.util.HashMap;
 
+// 프로그래머스()
 public class Test2 {
 
 	public static void main(String[] args) {
