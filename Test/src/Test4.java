@@ -1,6 +1,4 @@
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 // 프로그래머스   나누어 떨어지는 숫자 배열
 public class Test4 {
@@ -9,34 +7,74 @@ public class Test4 {
 		// TODO Auto-generated method stub
 		
 		int[] a = new int[]{5, 9, 7, 10};
+		int[] c = new int[]{3,6,7};
+		int[] d = new int[]{2,36,1,3};
 		Test4 test4 =new Test4();
-		test4.solution(a, 5);
+		String b= test4.solution(d, 1);
+		System.out.println(b);
 	}
 
-	
-	  public int[] solution(int[] arr, int divisor) {
+		// 리턴타입 String 직관적으로 보여지기 위한 코드
+	  public String solution(int[] arr, int divisor) {
 	      int[] answer = new int[arr.length];
 	      int n = 0;
+	      int n2 = 0;
 	      for(int i=0;i<arr.length;i++){
 	          if(arr[i]%divisor==0){
 	        	  answer[n] = arr[i];
 	        	  n++;
 	          }
 	      }
-	      
-	      int[] answer2 = new int[n];
-	      
+	      if(n==0){
+	    	  n++;
+	      }
+	    	  int[] answer2 = new int[n];
+
 	      for(int i=0;i<answer.length;i++){
-	    	  int n2 = 0;
 	    	  if(answer[i]!=0){
 	    		  answer2[n2]=answer[i];
 	    		n2++;
 	    	  }
 	      }
-	      if(answer2.length==0){
+	      if(answer2[0]==0){
 	    	  answer2[0] = -1;
 	      }
-	     System.out.println(Arrays.toString(answer2));
+	      Arrays.sort(answer2);
+	      
+	     String answer3 = Arrays.toString(answer2);
+	     
+	      return answer3;
+	  }
+	  
+	  
+	  //프로그래머스 전용
+	  public int[] solution2(int[] arr, int divisor) {
+	      int[] answer = new int[arr.length];
+	      int n = 0;
+	      int n2 = 0;
+	      for(int i=0;i<arr.length;i++){
+	          if(arr[i]%divisor==0){
+	        	  answer[n] = arr[i];
+	        	  n++;
+	          }
+	      }
+	      if(n==0){
+	    	  n++;
+	      }
+	    	  int[] answer2 = new int[n];
+
+	      for(int i=0;i<answer.length;i++){
+	    	  if(answer[i]!=0){
+	    		  answer2[n2]=answer[i];
+	    		n2++;
+	    	  }
+	      }
+	      if(answer2[0]==0){
+	    	  answer2[0] = -1;
+	      }
+              
+	     Arrays.sort(answer2);
+	     
 	      return answer2;
 	  }
 }
