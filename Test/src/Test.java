@@ -1,6 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
-
 // 시저 암호(프로그래머스)
 public class Test {
     
