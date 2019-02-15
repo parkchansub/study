@@ -1,3 +1,4 @@
+package level1;
 import java.util.Arrays;
 
 // 프로그래머스   나누어 떨어지는 숫자 배열
