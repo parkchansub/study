@@ -1,6 +1,6 @@
 package level1;
 import java.util.Arrays;
-// 프로그래머스 -  예산
+// 프로그래머스 -  예산(완료) / 블로그 작성(X)
 public class Test8 {
 
 	public static void main(String[] args) {

@@ -2,7 +2,7 @@ package level1;
 import java.util.HashMap;
 import java.util.Map;
 
-// 시저 암호(완주 못한 선수)
+// 프로그래머스 - 완주 못한 선수(정답은 해결/ 시간 문제 발생 수정 필요) / 블로그 작성(진행중 - 소스 코드 넣어야 함)
 public class Test3 {
     
     public static void main(String args[])  {

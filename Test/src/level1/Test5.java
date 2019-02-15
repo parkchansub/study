@@ -1,5 +1,5 @@
 package level1;
-// 프로그래머스   수박수박수박수박수박수?
+// 프로그래머스   수박수박수박수박수박수? (완료) / 블로그 작성(X)
 public class Test5 {
 
 	public static void main(String[] args) {

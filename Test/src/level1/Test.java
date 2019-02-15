@@ -1,5 +1,5 @@
 package level1;
-// 시저 암호(프로그래머스)
+// 프로그래머스 - 시저 암호(완료) / 블로그 작성(완료)
 public class Test {
     
     public static void main(String args[])  {

@@ -1,5 +1,5 @@
 package level1;
-// 프로그래머스 가운데 글자 가져오기
+// 프로그래머스 가운데 글자 가져오기(완료) / 블로그 작성(X)
 public class Test6 {
 
 	public static void main(String[] args) {

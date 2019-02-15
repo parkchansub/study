@@ -1,6 +1,6 @@
 package level1;
 import java.util.Arrays;
-// 프로그래머스 
+// 프로그래머스  문자열 내림 차순으로 배치하기(진행중)
 public class Test7 {
 
 	public static void main(String[] args) {
