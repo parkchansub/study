@@ -1,7 +1,7 @@
 package programmers.level1;
 import java.util.Arrays;
 
-// 프로그래머스 - 나누어 떨어지는 숫자 배열(완료) / 블로그 작성(X)
+// 프로그래머스 - 나누어 떨어지는 숫자 배열(완료) / 블로그 작성(완료)
 public class Test4 {
 
 	public static void main(String[] args) {
