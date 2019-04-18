@@ -5,8 +5,7 @@ public class Alice {
 	private String status = "home";
 	
 	public void drunked(){
-		this.tall = tall-40;
-		
+		this.tall = tall-100;
 		Drink drink = new Drink();
 		drink.downVolume(5);
 	}
@@ -15,7 +14,17 @@ public class Alice {
 		
 	}
 	
+	public String getStatus(){
+		return this.status;
+	}
+	
 	public int getTall(){
 		return this.tall;
+	}
+	
+	public void changeStatus(int tall){
+		if(tall<=30){
+			this.status = "park";
+		}
 	}
 }
