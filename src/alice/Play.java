@@ -8,9 +8,10 @@ public class Play {
 		Cake cake = new Cake();
 		Door door = new Door();
 		
-		alice.drunked();
+		alice.drunked(drink);
 		alice.changeStatus(alice.getTall());
 		System.out.println(alice.getStatus());
+		System.out.println(drink.getVolume());
 	}
 
 }

@@ -4,14 +4,14 @@ public class Alice {
 	private int tall = 130;
 	private String status = "home";
 	
-	public void drunked(){
+	public void drunked(Drink drink){
 		this.tall = tall-100;
-		Drink drink = new Drink();
 		drink.downVolume(5);
 	}
 	
-	public void eatCake(){
-		
+	public void eatCake(Cake cake){
+		this.tall = tall+50;
+		cake.downVolume(5);
 	}
 	
 	public String getStatus(){
