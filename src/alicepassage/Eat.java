@@ -1,4 +1,4 @@
-package alice;
+package alicepassage;
 
 public interface Eat {
 	void downVolume(int volume);

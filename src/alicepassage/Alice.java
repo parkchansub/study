@@ -1,4 +1,4 @@
-package alice;
+package alicepassage;
 
 public class Alice {
 	private int tall = 130;

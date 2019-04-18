@@ -1,4 +1,4 @@
-package alice;
+package alicepassage;
 
 public class Drink implements Eat{
 	private int volume = 10;

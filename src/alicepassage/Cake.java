@@ -1,4 +1,4 @@
-package alice;
+package alicepassage;
 
 public class Cake implements Eat{
 	private int volume;

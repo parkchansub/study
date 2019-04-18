@@ -1,4 +1,4 @@
-package alice;
+package alicepassage;
 
 public class Door {
 	private boolean flag = false;
