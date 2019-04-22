@@ -10,8 +10,12 @@ public class Play {
 		
 		alice.drunked(drink);
 		alice.changeStatus(alice.getTall());
+		alice.eatCake(cake);
+		
 		System.out.println(alice.getStatus());
 		System.out.println(drink.getVolume());
+		System.out.println(cake.getVolume());
+		
 	}
 
 }
