@@ -3,20 +3,34 @@ package cafe;
 import java.util.List;
 
 public class Menu {
-	private List<MenuItem> menuList;
+	private List<MenuItem> items;
 	
-	public void AddMenuItem(MenuItem menuItem){
-		this.menuList.add(menuItem);
+	
+	//기존의 내가 만든 코
+//	public void AddMenuItem(MenuItem menuItem){
+//		this.items.add(menuItem);
+//	}
+//	
+//	public MenuItem choose(String name) {
+//		for(int i=0;i<items.size();i++){
+//			if(items.get(i).getName().equals(name)){
+//				return items.get(i);
+//			}
+//		}
+//		return null;
+//	}
+	
+	// 책에서 제시한 코
+	public Menu(List<MenuItem> items) {
+		this.items = items;
 	}
-	
 	public MenuItem choose(String name) {
-		for(int i=0;i<menuList.size();i++){
-			if(menuList.get(i).getName().equals(name)){
-				return menuList.get(i);
+		for(MenuItem each : items) {
+			if(each.getName().equals(name)) {
+				return each;
 			}
 		}
 		return null;
 	}
-	
 	
 }
