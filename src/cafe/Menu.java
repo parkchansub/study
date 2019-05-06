@@ -6,7 +6,7 @@ public class Menu {
 	private List<MenuItem> items;
 	
 	
-	//기존의 내가 만든 코
+	//내가 기록한 코드
 //	public void AddMenuItem(MenuItem menuItem){
 //		this.items.add(menuItem);
 //	}
@@ -20,7 +20,7 @@ public class Menu {
 //		return null;
 //	}
 	
-	// 책에서 제시한 코
+	// 책 코드
 	public Menu(List<MenuItem> items) {
 		this.items = items;
 	}
