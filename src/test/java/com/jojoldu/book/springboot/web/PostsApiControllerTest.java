@@ -2,8 +2,8 @@ package com.jojoldu.book.springboot.web;
 
 import com.jojoldu.book.springboot.domain.posts.Posts;
 import com.jojoldu.book.springboot.domain.posts.PostsRepository;
-import com.jojoldu.book.springboot.dto.PostsSaveRequestDto;
-import com.jojoldu.book.springboot.dto.PostsUpdateRequestDto;
+import com.jojoldu.book.springboot.web.dto.PostsSaveRequestDto;
+import com.jojoldu.book.springboot.web.dto.PostsUpdateRequestDto;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -30,7 +30,7 @@ public class PostsApiControllerTest {
     private int port;
 
     @Autowired
-    private TestRestTemplate restTemplate;
+    private TestRestTemplate testRestTemplate;
 
     @Autowired
     private PostsRepository postsRepository;
@@ -55,7 +55,7 @@ public class PostsApiControllerTest {
         String url = "http://localhost:" + port + "/api/v1/posts";
 
         //when
-        ResponseEntity<Long> responseEntity  = restTemplate.postForEntity(url, requestDto, Long.class);
+        ResponseEntity<Long> responseEntity  = testRestTemplate.postForEntity(url, requestDto, Long.class);
 
         //then
         assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.OK);
@@ -91,7 +91,7 @@ public class PostsApiControllerTest {
 
 
         //when
-        ResponseEntity<Long> responseEntity = restTemplate.exchange(url, HttpMethod.PUT, requestEntity , Long.class);
+        ResponseEntity<Long> responseEntity = testRestTemplate.exchange(url, HttpMethod.PUT, requestEntity , Long.class);
 
         //then
         assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.OK);
