@@ -1,15 +1,17 @@
-var index = {
-    init : function() {
+var main = {
+    init : function () {
         var _this = this;
-        #('#btn-save').on('click',function(){
+        $('#btn-save').on('click', function () {
             _this.save();
         });
+
     },
-    save : function() {
+
+    save : function () {
         var data = {
-            title : $('#title').val(),
-            author : $("#author").val(),
-            content : $("#content").val()
+            title: $('#title').val(),
+            author: $('#author').val(),
+            content: $('#content').val()
         };
 
         $.ajax({
@@ -24,8 +26,9 @@ var index = {
         }).fail(function (error) {
             alert(JSON.stringify(error));
         });
-    }
+    },
+
 
 };
 
-index.init();
+main.init();
