@@ -4,14 +4,12 @@ var main = {
         $('#btn-save').on('click', function () {
             _this.save();
         });
-
     },
-
     save : function () {
         var data = {
             title: $('#title').val(),
-            author: $('#author').val(),
-            content: $('#content').val()
+            content: $('#content').val(),
+            author: $('#author').val()
         };
 
         $.ajax({
@@ -26,9 +24,7 @@ var main = {
         }).fail(function (error) {
             alert(JSON.stringify(error));
         });
-    },
-
-
+    }
 };
 
 main.init();
