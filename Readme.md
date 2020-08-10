@@ -37,7 +37,40 @@ JPA(자바 ORM 표준 JPA 프로그래밍 - 기본편(인프런))
         - 삭제 : jpa.remove(member)
     - 유지보수
     - 패러다임 불일치 해결
+        - JPA와 상속
+            - jpa.persist(album)
+            - insert into ITEM / insert into ALBUM
+        - JPA와 연관관계
+        - JPA와 객체 그래프 탐색
+        - JPA와 비교하기
     - 성능
+        - 1차 캐시와 동일성(identity) 보장
+        <pre>
+        <code>
+        string memeberId = "100"
+        Member m1 = jpa.find(Member.class, memberId) // SQL
+        Member m2 = jpa.find(Member.class, memberId) // transaction 캐시
+        println(m1 == m2) - sql 1번만 실행 캐시에 값을 반환함
+        </code>
+        </pre>
+        - 트랜잭션을 지원하는 쓰기 지연(transactional write-behind)
+        - 지연 로딩(Lazy Loading) / 즉시 로딩 (JPA 옵션으로 설정 가능)
+            <pre>
+                <code>
+                 //지연로딩 : 객체가 실제 사용될 떄 로딩
+                 Member member = memberDAO.find(memeberId);     //select * from MEMBER
+                 Team team = member.getTeam();                  
+                 String teamName = team.getName();              //select * from TEAM
+                </code>
+            </pre>
+            <pre>
+                <code>
+                 //즉시로딩 : join sql로 한번에 연관된 객체까지 미리 조회
+                 Member member = memberDAO.find(memeberId);     //select M.* , T.* from MEMBER join TEAM...
+                 Team team = member.getTeam();                  
+                 String teamName = team.getName();              
+                 </code>
+            </pre>
     - 데이터 접근 추상화와 벤더 독립성
     - 표준
     
