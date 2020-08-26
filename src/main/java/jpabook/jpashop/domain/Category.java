@@ -13,7 +13,7 @@ public class Category {
 
     private String name;
 
-    @ManyToOne
+    @ManyToOne()
     @JoinColumn(name = "PARENT_ID")
     private Category parent;
 

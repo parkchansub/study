@@ -12,7 +12,7 @@ public class Team {
     private Long Id;
     private String name;
 
-    @OneToMany(mappedBy = "team")
+    @OneToMany(mappedBy = "team",fetch = FetchType.LAZY ,)
     private List<Member> members = new ArrayList<>();
 
     public Long getId() {
