@@ -21,8 +21,9 @@ public class Member extends BaseEntity {
     @JoinColumn(name="TEAM_ID")
     private Team team;
 
-    private String street;
-    private String zipcode;
+    private Period workPeriod;
+
+    private Address homeAddress;
 
 
     @OneToOne
