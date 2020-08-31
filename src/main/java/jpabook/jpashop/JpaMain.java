@@ -9,6 +9,9 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -24,16 +27,14 @@ public class JpaMain {
         tx.begin();
 
         try {
+            CriteriaBuilder cb = em.getCriteriaBuilder();
+            CriteriaQuery<Member> query = cb.createQuery(Member.class);
 
-            Member member = new Member();
-            member.setCreatedBy("park");
-            member.setCreatedDate(LocalDateTime.now());
+            Root<Member> m = query.from(Member.class);
+            CriteriaQuery<Member> cq = query.select(m).where(cb.equal(m.get("username"), "kim"));
 
-
-            Order order = new Order();
-            order.addOrderItem(new OrderItem());
-
-            tx.commit();
+            List<Member> resultList = em.createQuery(cq)
+                    .getResultList();
         } catch (Exception e) {
             tx.rollback();
         }finally {

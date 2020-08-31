@@ -23,6 +23,7 @@ public class Member extends BaseEntity {
 
     private Period workPeriod;
 
+    @Embedded
     private Address homeAddress;
 
 
