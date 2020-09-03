@@ -22,10 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3fe7c1e3-55a2-4f29-84a8-34814b1a5d65" name="Default Changelist" comment="객체지향 쿼리 언어1 - 기본 문법 JPQL 기본 함수 까지">
-      <change afterPath="$PROJECT_DIR$/객체지향 쿼리 언어2 - 중급 문법.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3fe7c1e3-55a2-4f29-84a8-34814b1a5d65" name="Default Changelist" comment="객체지향 쿼리 언어2 - 중급 문법 경로표현식 까지 완료" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,7 +90,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598965397921</updated>
-      <workItem from="1598965399403" duration="5546000" />
+      <workItem from="1598965399403" duration="5706000" />
     </task>
     <task id="LOCAL-00001" summary="객체지향 쿼리 언어1 - 기본 문법 프로젝션 까지">
       <created>1598967915842</created>
@@ -109,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599045788606</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="객체지향 쿼리 언어2 - 중급 문법 경로표현식 까지 완료">
+      <created>1599055794006</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1599055794006</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,7 +133,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="객체지향 쿼리 언어1 - 기본 문법 프로젝션 까지" />
     <MESSAGE value="객체지향 쿼리 언어1 - 기본 문법 JPQL 기본 함수 까지" />
-    <option name="LAST_COMMIT_MESSAGE" value="객체지향 쿼리 언어1 - 기본 문법 JPQL 기본 함수 까지" />
+    <MESSAGE value="객체지향 쿼리 언어2 - 중급 문법 경로표현식 까지 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="객체지향 쿼리 언어2 - 중급 문법 경로표현식 까지 완료" />
   </component>
   <component name="WindowStateProjectService">
     <state x="208" y="43" key="#Project_Structure" timestamp="1599043911793">
@@ -140,9 +145,9 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="384" y="270" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.877@0.23.1440.877" timestamp="1599054144198" />
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1599045792353">
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1599055798262">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1599045792353" />
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1599055798262" />
   </component>
 </project>
