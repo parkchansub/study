@@ -27,6 +27,13 @@ public class JpaMain {
             Root<Member> m = query.from(Member.class);
             CriteriaQuery<Member> cq = query.select(m).where(cb.equal(m.get("username"), "kim"));
 
+
+            String query1 = "select m.username, 'HELLO', TRUE From Member m" +
+                            "where m.type = jpql.MemberType.ADMIN";
+            List<Object[]> result = em.createQuery(query1)
+                    .getResultList();
+
+
             List<Member> resultList = em.createQuery(cq)
                     .getResultList();
         } catch (Exception e) {

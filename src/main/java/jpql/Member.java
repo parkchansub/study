@@ -14,6 +14,8 @@ public class Member {
     @JoinColumn("TEAM_ID")
     private Team team;
 
+    private MemberType type;
+
     public Long getId() {
         return id;
     }
