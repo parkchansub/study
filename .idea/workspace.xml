@@ -19,12 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3fe7c1e3-55a2-4f29-84a8-34814b1a5d65" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/jpql/MemberType.java" afterDir="false" />
+    <list default="true" id="3fe7c1e3-55a2-4f29-84a8-34814b1a5d65" name="Default Changelist" comment="객체지향 쿼리 언어1 - 기본 문법 JPQL 기본 함수 까지">
+      <change afterPath="$PROJECT_DIR$/객체지향 쿼리 언어2 - 중급 문법.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpql/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpql/JpaMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpql/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpql/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/객체지향 쿼리 언어1 - 기본 문법.md" beforeDir="false" afterPath="$PROJECT_DIR$/객체지향 쿼리 언어1 - 기본 문법.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,14 +64,14 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.20114942" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="jpql" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -104,10 +101,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598965397921</updated>
-      <workItem from="1598965399403" duration="2470000" />
-      <workItem from="1599009688970" duration="5162000" />
-      <workItem from="1599031230244" duration="4278000" />
+      <workItem from="1598965399403" duration="5546000" />
     </task>
+    <task id="LOCAL-00001" summary="객체지향 쿼리 언어1 - 기본 문법 프로젝션 까지">
+      <created>1598967915842</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1598967915842</updated>
+    </task>
+    <task id="LOCAL-00002" summary="객체지향 쿼리 언어1 - 기본 문법 JPQL 기본 함수 까지">
+      <created>1599045788606</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1599045788606</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,5 +148,24 @@
       <screen x="-1920" y="9" width="1920" height="1040" />
     </state>
     <state x="-1297" y="234" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/-1920.9.1920.1040@-1920.9.1920.1040" timestamp="1599093763922" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="객체지향 쿼리 언어1 - 기본 문법 프로젝션 까지" />
+    <MESSAGE value="객체지향 쿼리 언어1 - 기본 문법 JPQL 기본 함수 까지" />
+    <option name="LAST_COMMIT_MESSAGE" value="객체지향 쿼리 언어1 - 기본 문법 JPQL 기본 함수 까지" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="208" y="43" key="#Project_Structure" timestamp="1599043911793">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="208" y="43" key="#Project_Structure/0.23.1440.877@0.23.1440.877" timestamp="1599043911793" />
+    <state x="384" y="270" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599054144198">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="384" y="270" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.877@0.23.1440.877" timestamp="1599054144198" />
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1599045792353">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1599045792353" />
   </component>
 </project>
