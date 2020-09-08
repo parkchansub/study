@@ -10,12 +10,18 @@ import javax.persistence.Id;
 
 @Embeddable
 @Getter
-@Setter
 public class Address {
-
-
 
     private String city;
     private String zipcode;
     private String street;
+
+    public Address() {
+    }
+
+    public Address(String city, String zipcode, String street) {
+        this.city = city;
+        this.street = street;
+        this.zipcode = zipcode;
+    }
 }
