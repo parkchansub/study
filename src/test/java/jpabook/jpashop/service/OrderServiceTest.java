@@ -61,7 +61,7 @@ public class OrderServiceTest {
         Long orderId = orderService.order(member.getId(), item.getId(), orderCount);
 
         //when
-        orderService.orderCancle(orderId);
+        orderService.cancle(orderId);
 
         //then
         Order getOrder = orderRepository.findOne(orderId);
@@ -86,7 +86,6 @@ public class OrderServiceTest {
         fail("재고 수량 부족 예외가 발생해햐 한다.");
     }
 
-    @org.jetbrains.annotations.NotNull
     private Book createBook(String name, int price, int stockQuantity) {
         Book book = new Book();
         book.setName(name);
@@ -95,7 +94,6 @@ public class OrderServiceTest {
         return book;
     }
 
-    @org.jetbrains.annotations.NotNull
     private Member createMember() {
         Member member = new Member();
         member.setAddress(new Address("이매동", "12345","판교로"));

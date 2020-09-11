@@ -1,14 +1,12 @@
 package jpabook.jpashop.service;
 
-import jpabook.jpashop.MemberRepository;
 import jpabook.jpashop.domain.*;
 import jpabook.jpashop.repository.ItemRepository;
+import jpabook.jpashop.repository.MemberRepository;
 import jpabook.jpashop.repository.OrderRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.List;
 
 @Service
 @RequiredArgsConstructor
@@ -54,7 +52,7 @@ public class OrderService {
         Order order = orderRepository.findOne(orderId);
 
         //주문 취소
-        order.cancle();
+        order.orderCancle();
     }
 
     /**
