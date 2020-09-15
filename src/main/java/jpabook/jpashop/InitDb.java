@@ -1,9 +1,12 @@
 package jpabook.jpashop;
 
-import jpabook.jpashop.domain.*;
+import jpabook.jpashop.domain.Address;
+import jpabook.jpashop.domain.Delivery;
+import jpabook.jpashop.domain.Member;
+import jpabook.jpashop.domain.Order;
+import jpabook.jpashop.domain.OrderItem;
 import jpabook.jpashop.domain.item.Book;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Required;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -47,7 +50,7 @@ public class InitDb {
             em.persist(book2);
 
             OrderItem orderItem1 = OrderItem.createOrderItem(book1, 10000, 1);
-            OrderItem orderItem2 = OrderItem.createOrderItem(book1, 10000, 1);
+            OrderItem orderItem2 = OrderItem.createOrderItem(book2, 20000, 2);
 
             Delivery delivery = new Delivery();
             delivery.setAddress(member.getAddress());
@@ -57,3 +60,4 @@ public class InitDb {
         }
     }
 }
+
