@@ -24,8 +24,6 @@ public class ConditionalTest {
                     assertThat(context).hasSingleBean(MyBean.class);
                     assertThat(context).hasSingleBean(Config1.class);
                 });
-
-
         //false
         new ApplicationContextRunner().withUserConfiguration(Config2.class)
                 .run(context -> {
@@ -45,7 +43,7 @@ public class ConditionalTest {
 
     @Configuration
     @BooleanConditional(true)
-    class Config1 {
+    static class Config1 {
         @Bean
         MyBean myBean() {
             return new MyBean();
@@ -56,7 +54,7 @@ public class ConditionalTest {
 
     @Configuration
     @BooleanConditional(false)
-    class Config2 {
+    static class Config2 {
         @Bean
         MyBean myBean() {
             return new MyBean();
@@ -70,7 +68,8 @@ public class ConditionalTest {
         @Override
         public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {
             Map<String, Object> annotationAttributes = metadata.getAnnotationAttributes(BooleanConditional.class.getName());
-            return (boolean) annotationAttributes.get("value");
+            Boolean value = (Boolean) annotationAttributes.get("value");
+            return value;
         }
     }
 
