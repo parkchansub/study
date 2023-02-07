@@ -13,7 +13,6 @@ public class HellobootApplication {
     ApplicationRunner applicationRunner(Environment env) {
         return args -> {
             String name = env.getProperty("my.name");
-            System.out.println("my.name : " + name);
 
         };
     }
