@@ -9,11 +9,8 @@ class DollarTest {
     @Test
     public void testMultiplication() {
         Dollar five = new Dollar(5);
-
-        Dollar product = five.time(2);
-        assertEquals(10, product.getAmount());
-        product = five.time(3);
-        assertEquals(15, product.getAmount());
+        assertEquals(new Dollar(10), five.time(2));
+        assertEquals(new Dollar(15), five.time(3));
 
     }
 
@@ -21,6 +18,9 @@ class DollarTest {
     public void testEquality() {
         assertTrue(new Dollar(5).equals(new Dollar(5)));
         assertFalse(new Dollar(5).equals(new Dollar(6)));
+        assertTrue(new Franc(5).equals(new Franc(5)));
+        assertFalse(new Franc(5).equals(new Franc(6)));
+        assertFalse(new Dollar(5).equals(new Franc(5)));
     }
 
 }
