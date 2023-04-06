@@ -17,7 +17,7 @@ class MemberRepositoryV0Test {
     @Test
     void crud() throws SQLException {
         //save
-        Member member = new Member("memberVo", 10000);
+        Member member = new Member("memberVo1", 10000);
         memberRepository.save(member);
 
         //findById
