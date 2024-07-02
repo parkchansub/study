@@ -14,6 +14,7 @@ class SortTest {
     @BeforeEach
     void beforeEach(){
         sort = new Sort();
+        System.out.println(this);
     }
 
     @Test
