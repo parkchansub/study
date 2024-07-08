@@ -31,6 +31,9 @@ public class Payment {
         return new Payment(orderId, currency, foreignCurrencyAmount, exRate, convertedAmount, validUntil);
     }
 
+    public boolean isValid(Clock clock) {
+        return LocalDateTime.now(clock).isBefore(this.validUntil);
+    }
 
     @Override
     public String toString() {
