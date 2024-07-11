@@ -6,7 +6,6 @@ import java.math.BigDecimal;
 import java.time.Clock;
 import java.time.LocalDateTime;
 
-@Getter
 public class Payment {
     private Long orderId;
     private String currency;
@@ -33,6 +32,31 @@ public class Payment {
 
     public boolean isValid(Clock clock) {
         return LocalDateTime.now(clock).isBefore(this.validUntil);
+    }
+
+
+    public Long getOrderId() {
+        return orderId;
+    }
+
+    public String getCurrency() {
+        return currency;
+    }
+
+    public BigDecimal getForeignCurrencyAmount() {
+        return foreignCurrencyAmount;
+    }
+
+    public BigDecimal getExRate() {
+        return exRate;
+    }
+
+    public BigDecimal getConvertedAmount() {
+        return convertedAmount;
+    }
+
+    public LocalDateTime getValidUntil() {
+        return validUntil;
     }
 
     @Override

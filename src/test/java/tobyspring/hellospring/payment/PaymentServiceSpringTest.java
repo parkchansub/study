@@ -29,7 +29,7 @@ class PaymentServiceSpringTest {
 
 
     @Test
-    void convertedAmount() throws IOException {
+    void convertedAmount() {
         Payment payment = paymentService.prepare(1L, "USD", TEN);
         assertThat(payment.getExRate()).isEqualByComparingTo(valueOf(1_000));
         assertThat(payment.getConvertedAmount()).isEqualByComparingTo(valueOf(10_000));
@@ -41,7 +41,7 @@ class PaymentServiceSpringTest {
     }
 
     @Test
-    void validUntil() throws IOException {
+    void validUntil() {
 
         Payment payment = paymentService.prepare(1L, "USD", TEN);
         LocalDateTime now = LocalDateTime.now(this.clock);
