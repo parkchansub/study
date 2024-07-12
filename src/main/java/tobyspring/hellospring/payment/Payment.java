@@ -1,6 +1,5 @@
 package tobyspring.hellospring.payment;
 
-import lombok.Getter;
 
 import java.math.BigDecimal;
 import java.time.Clock;
