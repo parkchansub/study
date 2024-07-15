@@ -22,7 +22,6 @@ public class PaymentConfig {
         return new PaymentService(exRateProvider(), clock());
     }
 
-
     @Bean
     public RestTemplate restTemplate() {
         return new RestTemplate();

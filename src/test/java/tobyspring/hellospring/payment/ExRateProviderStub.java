@@ -1,9 +1,5 @@
 package tobyspring.hellospring.payment;
 
-import lombok.Getter;
-import lombok.Setter;
-
-import java.io.IOException;
 import java.math.BigDecimal;
 
 public class ExRateProviderStub implements ExRateProvider{
