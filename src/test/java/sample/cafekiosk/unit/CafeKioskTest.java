@@ -4,6 +4,9 @@ import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import sample.cafekiosk.unit.beverage.Americano;
 import sample.cafekiosk.unit.beverage.Latte;
+import sample.cafekiosk.unit.order.Order;
+
+import java.time.LocalDateTime;
 
 import static org.assertj.core.api.Assertions.*;
 
@@ -74,5 +77,19 @@ class CafeKioskTest {
 
     }
 
+
+    @Test
+    void createOrder() {
+        LocalDateTime currentTime = LocalDateTime.now();
+        CafeKiosk cafeKiosk = new CafeKiosk();
+        Americano americano = new Americano();
+        cafeKiosk.add(americano);
+
+        Order order = cafeKiosk.createOrder(currentTime);
+
+        Assertions.assertThat(order.getBeverages()).hasSize(1);
+        Assertions.assertThat(order.getBeverages().get(0).getName()).isEqualTo("아메리카노");
+
+    }
 
 }
