@@ -51,6 +51,7 @@ class CafeKioskTest {
     void remove() {
         CafeKiosk cafeKiosk = new CafeKiosk();
         Americano americano = new Americano();
+        Americano americano2 = new Americano();
 
         cafeKiosk.add(americano);
         Assertions.assertThat(cafeKiosk.getBeverages()).hasSize(1);
