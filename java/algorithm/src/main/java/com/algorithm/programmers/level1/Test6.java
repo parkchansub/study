@@ -1,4 +1,4 @@
-package programmers.level1;
+package com.algorithm.programmers.level1;
 // 프로그래머스 가운데 글자 가져오기(완료) / 블로그 작성(완료)
 public class Test6 {
 

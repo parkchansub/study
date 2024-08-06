@@ -1,4 +1,4 @@
-package programmers.level1;
+package com.algorithm.programmers.level1;
 import java.util.Arrays;
 // 프로그래머스  문자열 내림 차순으로 배치하기(진행중) 
 public class Test7 {
