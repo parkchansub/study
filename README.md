@@ -11,8 +11,8 @@
 
 - [인프런 - 토비의 스프링 6 이해와 원리](https://github.com/parkchansub/study/tree/master/spring/tobyspring)
 - [인프런 - 스프링 핵심 원리 - 기본편](https://github.com/parkchansub/study/tree/master/spring/spring_core)
-- 인프런 - 스프링 MVC 1편 - 백엔드 웹 개발 핵심 기술
-- 인프런 - 스프링 MVC 2편 - 백엔드 웹 개발 활용 기술
+- [인프런 - 스프링 MVC 1편 - 백엔드 웹 개발 핵심 기술](https://github.com/parkchansub/study/tree/master/spring/mvc)
+- [인프런 - 스프링 MVC 2편 - 백엔드 웹 개발 활용 기술](https://github.com/parkchansub/study/tree/master/spring/mvc)
 - [인프런 - 스프링 DB 1편 - 데이터 접근 핵심 원리](https://github.com/parkchansub/study/tree/master/spring/jdbc/spring_jdbc)
 - 인프런 - 예제로 배우는 스프링 입문
 - 인프런 - 스프링 프레임워크 핵심 기술
